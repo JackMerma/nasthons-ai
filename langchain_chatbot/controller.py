@@ -1,6 +1,7 @@
 import os
 from langchain_community.chat_models.ollama import ChatOllama
 from langchain.prompts import ChatPromptTemplate
+from langchain_chatbot.templates import template_from_messages
 
 
 def build_respose(context, query):
