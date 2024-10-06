@@ -22,7 +22,7 @@ def chatbot():
     # Processing
     response = build_respose(context, query)
 
-    return jsonify({"response", response.content})
+    return jsonify({"response": response.content})
 
 
 if __name__ == '__main__':
