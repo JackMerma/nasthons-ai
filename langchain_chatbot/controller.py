@@ -8,7 +8,7 @@ def build_respose(context, query):
 
     messages = template_from_messages(query)
     prompt_template = ChatPromptTemplate.from_messages(messages)
-    prompt = prompt_template.invoke({""})
+    prompt = prompt_template.invoke({"context":context})
 
     llm_model = ChatOllama(model=os.getenv('LLM_MODEL'), temperature=0.1)
 
