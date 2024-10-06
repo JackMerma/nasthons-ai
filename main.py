@@ -1,6 +1,6 @@
 import os
 from flask import Flask, request, jsonify
-from langchain_chatbot.controller import buil_response
+from langchain_chatbot.controller import build_respose
 
 
 # Definning app
